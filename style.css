@@ -1,12 +1,29 @@
 nav{
-		font-size: 20px;
+		font-size:20px;
 		color:yellow;
+		background-color:dimgrey;
+		padding:5px;
+		text-align:center;
 }
-
+		
 img{
 		height:250px;
 }
 
 body{
-		color:white;
+		color:snow;
+}
+
+a:link{
+		color:snow;
+}
+
+a:visited{
+		color:snow;
+}
+
+.extreme{
+		color:darkslategrey;
+		font-size:25px;
+		text-align:center;
 }
