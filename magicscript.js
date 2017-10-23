@@ -27,7 +27,7 @@ function shakemagic(){
 	if(img == "front"){
 		
 		//grab image by id
-		document.getElementById("magicball").src= "r/magicgoogle8ball1.jpg";
+		document.getElementById("magicball").src= "r/magicgoogle8ballback1.jpg";
 		
 		//grab the results
 		document.getElementById("result").innerHTML=list[random()];
@@ -37,7 +37,7 @@ function shakemagic(){
 	//reset
 	else{
 	//grab image by id
-		document.getElementById("magicball").src= "r/magic8ball.png";
+		document.getElementById("magicball").src= "r/magicgoogle8ball1.jpg";
 		
 		//grab the results
 		document.getElementById("result").innerHTML="Click the magic 8 ball to shake again";
