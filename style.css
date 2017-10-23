@@ -2,6 +2,7 @@ nav{
 		font-size:20px;
 		color:yellow;
 		background-color:dimgrey;
+		border-radius:5px;
 		padding:5px;
 		text-align:center;
 }
@@ -22,9 +23,18 @@ a:visited{
 		color:snow;
 }
 
-.extreme{
+.indexextreme{
 		color:darkslategrey;
 		font-size:25px;
 		text-align:center;
 		height:400px;
+}
+
+.extreme{
+		color:darkslategrey;
+		font-size:25px;
+		text-align:center;
+		height:30px;
+		background-color:orange;
+		border-radius:7px;
 }
