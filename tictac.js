@@ -1,11 +1,13 @@
 var character = "x"
+var gamneover = false;
 
 
 
 function play(location){
 	
-	if(document.getElementById(location).innerHTML== ""){
-	
+	if(document.getElementById(location).innerHTML== "" &&
+	gamneover == false){
+		
 		if(character == "x"){
 			
 			
@@ -53,8 +55,11 @@ function winner(){
 	((r1 == r2) && (r1 == r3) && (r1 != '')) ||
 	((l1 == c2) && (l1 == r3) && (l1 != '')) ||
 	((l3 == c2) && (l3 == r1) && (l3 != ''))) {
-		alert("Winner");
-	}}
+		alert("Winner! Please reset game.");
+		gamneover = true;
+	}
+	
+}
 
 function restart(){
 
@@ -70,5 +75,6 @@ function restart(){
 	
 	document.getElementById("results").innerHTML="Its Player One's Turn";
 	character = "x";
+	gamneover = false;
 	
 }
