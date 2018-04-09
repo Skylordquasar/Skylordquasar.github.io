@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>
+			Digits (ft. Skylord Quasar)
+		</title>
+		<link rel="stylesheet" type="text/css" href="style2.css">
+		<script src="digitsOfPi.js"></script>
+		<style>
+			body {background-color: powderblue}
+			body {color: black;}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a href="index.html" />
+				Home</a>
+			|
+			<a href="aboutMe.html" />
+				About Me</a>
+			|
+			<a href="projects.html" />
+				Projects</a>
+		</nav>
+		<section>
+			<p class="extreme">
+			Numerical Constant Digit Finder
+			</p>
+		</section>
+		<div>
+		<div id="container">
+			<img id="constantillustration" src="r/pi.svg"/>
+			<div id="digitscontainer">
+				<section>
+					Choose the mathematical constant you would like to see. </br>
+					<input type="radio" id="pi" name="constant" value="pi" onClick="piChosen()" checked>
+					<label for="pi">π (pi)</label> </br>
+					<input type="radio" id="e" name="constant" value="e" onClick="eChosen()">
+					<label for="e">e (Euler's number)</label> </br>
+					<input type="radio" id="phi" name="constant" value="phi" onClick="phiChosen()">
+					<label for="phi">φ (golden ratio)</label> </br>
+				</section>
+				<section id="digitsMessage">
+					I will output all digits of π within a range of your choosing.<br>
+				</section>
+				<section>
+					<input type="number" id="beginRange" value=1 min=1 max=10000></input> to <input type="number" id="endRange" value=10000 min=1 max=10000></input> <button onclick="digits()">Show me the digits!</button>
+				</section>
+			</div>
+		</div>
+		<div id="digits"></div>
+	</body>
+</html>
